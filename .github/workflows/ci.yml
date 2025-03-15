@@ -90,10 +90,10 @@ jobs:
 
     - name: Run integration test 
       run: |
-        wget -q https://github.com/grafana/k6/releases/download/v0.37.0/k6-v0.37.0-linux-amd64.tar.gz
-        tar -xzf k6-v0.37.0-linux-amd64.tar.gz
-        chmod +x k6-v0.37.0-linux-amd64/k6
-        k6-v0.37.0-linux-amd64/k6 run script.js
+        wget -q https://github.com/grafana/k6/releases/download/v0.57.0/k6-v0.57.0-linux-amd64.tar.gz
+        tar -xzf k6-v0.57.0-linux-amd64.tar.gz
+        chmod +x k6-v0.57.0-linux-amd64/k6
+        k6-v0.57.0-linux-amd64/k6 run script.js
       working-directory: k6
 
     - name: Stop components

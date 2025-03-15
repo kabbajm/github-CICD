@@ -3,7 +3,7 @@ import http from 'k6/http';
 
 export const options = {
   thresholds: {
-    checks: [{threshold: 'rate == 0.90',abortOnFail: true }],
+    checks: [{threshold: 'rate == 2.00',abortOnFail: true }],
   }
 };
 
